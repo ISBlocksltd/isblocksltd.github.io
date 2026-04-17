@@ -6,7 +6,12 @@
  */
 
 import React, {type ReactNode} from 'react';
-import {useThemeConfig} from '@docusaurus/theme-common';
+import clsx from 'clsx';
+import {
+  useThemeConfig,
+  ErrorCauseBoundary,
+  ThemeClassNames,
+} from '@docusaurus/theme-common';
 import {
   splitNavbarItems,
   useNavbarMobileSidebar,
@@ -25,11 +30,22 @@ function useNavbarItems() {
   return useThemeConfig().navbar.items as NavbarItemConfig[];
 }
 
-function NavbarItems({items}: {items: NavbarItemConfig[]}): JSX.Element {
+function NavbarItems({items}: {items: NavbarItemConfig[]}): ReactNode {
   return (
     <>
       {items.map((item, i) => (
-        <NavbarItem {...item} key={i} />
+        <ErrorCauseBoundary
+          key={i}
+          onError={(error) =>
+            new Error(
+              `A theme navbar item failed to render.
+Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+${JSON.stringify(item, null, 2)}`,
+              {cause: error},
+            )
+          }>
+          <NavbarItem {...item} />
+        </ErrorCauseBoundary>
       ))}
     </>
   );
@@ -44,13 +60,25 @@ function NavbarContentLayout({
 }) {
   return (
     <div className="navbar__inner">
-      <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--right">{right}</div>
+      <div
+        className={clsx(
+          ThemeClassNames.layout.navbar.containerLeft,
+          'navbar__items',
+        )}>
+        {left}
+      </div>
+      <div
+        className={clsx(
+          ThemeClassNames.layout.navbar.containerRight,
+          'navbar__items navbar__items--right',
+        )}>
+        {right}
+      </div>
     </div>
   );
 }
 
-export default function NavbarContent(): JSX.Element {
+export default function NavbarContent(): ReactNode {
   const mobileSidebar = useNavbarMobileSidebar();
 
   const items = useNavbarItems();

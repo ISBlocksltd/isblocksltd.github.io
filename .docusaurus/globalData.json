@@ -1,0 +1,263 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "administration/congratulations",
+              "path": "/docs/administration/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/create-a-blog-post",
+              "path": "/docs/administration/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/create-a-document",
+              "path": "/docs/administration/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/create-a-page",
+              "path": "/docs/administration/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/deploy-your-site",
+              "path": "/docs/administration/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/markdown-features",
+              "path": "/docs/administration/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/ca-va-publishing",
+              "path": "/docs/advanced_topics/ca-va-publishing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/congratulations",
+              "path": "/docs/advanced_topics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/create-a-blog-post",
+              "path": "/docs/advanced_topics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/create-a-document",
+              "path": "/docs/advanced_topics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/deploy-your-site",
+              "path": "/docs/advanced_topics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "advanced_topics/markdown-features",
+              "path": "/docs/advanced_topics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/congratulations",
+              "path": "/docs/architecture/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/create-a-blog-post",
+              "path": "/docs/architecture/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/create-a-document",
+              "path": "/docs/architecture/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/create-a-page",
+              "path": "/docs/architecture/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/deploy-your-site",
+              "path": "/docs/architecture/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "architecture/markdown-features",
+              "path": "/docs/architecture/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/baremetal",
+              "path": "/docs/installation/baremetal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/congratulations",
+              "path": "/docs/installation/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/deploy-your-site",
+              "path": "/docs/installation/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/docker",
+              "path": "/docs/installation/docker",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/hardware",
+              "path": "/docs/installation/hardware",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/kubernetes",
+              "path": "/docs/installation/kubernetes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/markdown-features",
+              "path": "/docs/installation/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/congratulations",
+              "path": "/docs/integration/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/create-a-blog-post",
+              "path": "/docs/integration/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/create-a-document",
+              "path": "/docs/integration/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/create-a-page",
+              "path": "/docs/integration/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/deploy-your-site",
+              "path": "/docs/integration/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "integration/markdown-features",
+              "path": "/docs/integration/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/architecture",
+              "path": "/docs/category/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/installation",
+              "path": "/docs/category/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/administration",
+              "path": "/docs/category/administration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/integration",
+              "path": "/docs/category/integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/docs/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics-1",
+              "path": "/docs/category/tutorial---basics-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

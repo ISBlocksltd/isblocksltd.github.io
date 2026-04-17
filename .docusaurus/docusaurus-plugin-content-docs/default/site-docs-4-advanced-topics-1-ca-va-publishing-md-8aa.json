@@ -1,0 +1,27 @@
+{
+  "id": "advanced_topics/ca-va-publishing",
+  "title": "CA to VA Publishing Using Kafka",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/4_advanced_topics/1-ca-va-publishing.md",
+  "sourceDirName": "4_advanced_topics",
+  "slug": "/advanced_topics/ca-va-publishing",
+  "permalink": "/docs/advanced_topics/ca-va-publishing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/4_advanced_topics/1-ca-va-publishing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
+  },
+  "next": {
+    "title": "Create a Document",
+    "permalink": "/docs/advanced_topics/create-a-document"
+  }
+}

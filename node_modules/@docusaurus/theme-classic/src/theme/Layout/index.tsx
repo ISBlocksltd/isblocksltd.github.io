@@ -5,10 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
 import ErrorBoundary from '@docusaurus/ErrorBoundary';
-import {PageMetadata, ThemeClassNames} from '@docusaurus/theme-common';
+import {
+  PageMetadata,
+  SkipToContentFallbackId,
+  ThemeClassNames,
+} from '@docusaurus/theme-common';
 import {useKeyboardNavigation} from '@docusaurus/theme-common/internal';
 import SkipToContent from '@theme/SkipToContent';
 import AnnouncementBar from '@theme/AnnouncementBar';
@@ -19,7 +23,7 @@ import ErrorPageContent from '@theme/ErrorPageContent';
 import type {Props} from '@theme/Layout';
 import styles from './styles.module.css';
 
-export default function Layout(props: Props): JSX.Element {
+export default function Layout(props: Props): ReactNode {
   const {
     children,
     noFooter,
@@ -42,7 +46,9 @@ export default function Layout(props: Props): JSX.Element {
       <Navbar />
 
       <div
+        id={SkipToContentFallbackId}
         className={clsx(
+          ThemeClassNames.layout.main.container,
           ThemeClassNames.wrapper.main,
           styles.mainWrapper,
           wrapperClassName,

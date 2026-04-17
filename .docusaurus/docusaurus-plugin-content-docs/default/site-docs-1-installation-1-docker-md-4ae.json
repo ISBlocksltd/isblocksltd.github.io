@@ -1,0 +1,27 @@
+{
+  "id": "installation/docker",
+  "title": "Docker",
+  "description": "Documents are groups of pages connected through:",
+  "source": "@site/docs/1_installation/1_docker.md",
+  "sourceDirName": "1_installation",
+  "slug": "/installation/docker",
+  "permalink": "/docs/installation/docker",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/1_installation/1_docker.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Kubernetes",
+    "permalink": "/docs/installation/hardware"
+  },
+  "next": {
+    "title": "Bare Metal",
+    "permalink": "/docs/installation/baremetal"
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "Installation",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "Installation of the KMS on kubernetes, docker and bare metal."
   }
 }

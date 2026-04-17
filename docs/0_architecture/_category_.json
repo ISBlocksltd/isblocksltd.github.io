@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "Architecture",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "An overview of the architecture of IS Blocks Key Management System (KMS)."
   }
 }

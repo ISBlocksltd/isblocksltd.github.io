@@ -7,26 +7,12 @@
 
 import React, {
   useCallback,
-  useEffect,
-  useLayoutEffect,
   useMemo,
   useRef,
   type ComponentType,
   type ReactNode,
 } from 'react';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-
-/**
- * This hook is like `useLayoutEffect`, but without the SSR warning.
- * It seems hacky but it's used in many React libs (Redux, Formik...).
- * Also mentioned here: https://github.com/facebook/react/issues/16956
- *
- * It is useful when you need to update a ref as soon as possible after a React
- * render (before `useEffect`).
- */
-export const useIsomorphicLayoutEffect = ExecutionEnvironment.canUseDOM
-  ? useLayoutEffect
-  : useEffect;
+import useIsomorphicLayoutEffect from '@docusaurus/useIsomorphicLayoutEffect';
 
 /**
  * Temporary userland implementation until an official hook is implemented
@@ -64,6 +50,9 @@ export function usePrevious<T>(value: T): T | undefined {
     ref.current = value;
   });
 
+  // TODO need to fix this React Compiler lint error
+  //  probably requires changing the API though
+  // eslint-disable-next-line react-compiler/react-compiler
   return ref.current;
 }
 
@@ -95,7 +84,7 @@ export function useShallowMemoObject<O extends object>(obj: O): O {
   const deps = Object.entries(obj);
   // Sort by keys to make it order-insensitive
   deps.sort((a, b) => a[0].localeCompare(b[0]));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-compiler/react-compiler,react-hooks/exhaustive-deps
   return useMemo(() => obj, deps.flat());
 }
 
