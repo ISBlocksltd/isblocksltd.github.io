@@ -6,13 +6,13 @@
 export default {
   "title": "IS Blocks Docs",
   "tagline": "Information Security Blocks",
-  "url": "https://your-docusaurus-site.example.com",
+  "url": "https://isblocksltd.github.io",
   "baseUrl": "/",
-  "projectName": "docusaurus",
-  "organizationName": "facebook",
+  "projectName": "isblocksltd.github.io",
+  "organizationName": "isblocksltd",
   "trailingSlash": false,
   "onBrokenLinks": "throw",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/isblocks.ico",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -79,10 +79,10 @@ export default {
       "disableSwitch": false
     },
     "navbar": {
-      "title": "My Site",
+      "title": "",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "IS Blocks",
+        "src": "img/logo.png"
       },
       "items": [
         {
@@ -97,7 +97,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/isblocksltd",
           "label": "GitHub",
           "position": "right"
         }
@@ -129,7 +129,7 @@ export default {
             },
             {
               "label": "X",
-              "href": "https://x.com/docusaurus"
+              "href": "https://x.com/isblocksltd"
             }
           ]
         },
@@ -142,7 +142,7 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/isblocksltd"
             }
           ]
         }
