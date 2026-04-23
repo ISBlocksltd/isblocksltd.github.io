@@ -12,7 +12,29 @@ export default {
   "organizationName": "isblocksltd",
   "trailingSlash": false,
   "onBrokenLinks": "throw",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/isblocks.ico",
+  "future": {
+    "v4": {
+      "removeLegacyPostBuildHeadAttribute": true,
+      "useCssCascadeLayers": true,
+      "siteStorageNamespacing": true,
+      "fasterByDefault": true,
+      "mdx1CompatDisabledByDefault": true
+    },
+    "experimental_vcs": {},
+    "experimental_router": "browser",
+    "faster": {
+      "swcJsLoader": true,
+      "swcJsMinimizer": true,
+      "swcHtmlMinimizer": true,
+      "lightningCssMinimizer": true,
+      "mdxCrossCompilerCache": true,
+      "rspackBundler": true,
+      "rspackPersistentCache": true,
+      "ssgWorkerThreads": true,
+      "gitEagerVcs": true
+    }
+  },
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -51,18 +73,23 @@ export default {
   ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
+    "colorMode": {
+      "respectPrefersColorScheme": true,
+      "defaultMode": "light",
+      "disableSwitch": false
+    },
     "navbar": {
       "title": "",
       "logo": {
         "alt": "IS Blocks",
-        "src": "img/isblocks_logo.png"
+        "src": "img/logo.png"
       },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Docs"
+          "label": "Tutorial"
         },
         {
           "to": "/blog",
@@ -70,7 +97,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/isblocksltd",
           "label": "GitHub",
           "position": "right"
         }
@@ -94,15 +121,15 @@ export default {
           "items": [
             {
               "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/isblocks"
+              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
             },
             {
               "label": "Discord",
-              "href": "https://discordapp.com/invite/isblocks"
+              "href": "https://discordapp.com/invite/docusaurus"
             },
             {
-              "label": "Twitter",
-              "href": "https://twitter.com/isblocks"
+              "label": "X",
+              "href": "https://x.com/isblocksltd"
             }
           ]
         },
@@ -326,11 +353,6 @@ export default {
         }
       ]
     },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
-    },
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {
@@ -350,26 +372,9 @@ export default {
     }
   },
   "baseUrlIssueBanner": true,
-  "future": {
-    "v4": {
-      "removeLegacyPostBuildHeadAttribute": false,
-      "useCssCascadeLayers": false
-    },
-    "experimental_faster": {
-      "swcJsLoader": false,
-      "swcJsMinimizer": false,
-      "swcHtmlMinimizer": false,
-      "lightningCssMinimizer": false,
-      "mdxCrossCompilerCache": false,
-      "rspackBundler": false,
-      "rspackPersistentCache": false,
-      "ssgWorkerThreads": false
-    },
-    "experimental_storage": {
-      "type": "localStorage",
-      "namespace": false
-    },
-    "experimental_router": "browser"
+  "storage": {
+    "type": "localStorage",
+    "namespace": true
   },
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
@@ -390,9 +395,9 @@ export default {
     "mermaid": false,
     "emoji": true,
     "mdx1Compat": {
-      "comments": true,
-      "admonitions": true,
-      "headingIds": true
+      "comments": false,
+      "admonitions": false,
+      "headingIds": false
     },
     "anchors": {
       "maintainCase": false

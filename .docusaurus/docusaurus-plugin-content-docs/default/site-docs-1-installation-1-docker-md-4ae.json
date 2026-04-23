@@ -18,7 +18,7 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Kubernetes",
-    "permalink": "/docs/installation/hardware"
+    "permalink": "/docs/installation/kubernetes"
   },
   "next": {
     "title": "Bare Metal",

@@ -21,7 +21,7 @@
     "permalink": "/docs/category/installation"
   },
   "next": {
-    "title": "Kubernetes",
-    "permalink": "/docs/installation/hardware"
+    "title": "Docker",
+    "permalink": "/docs/installation/docker"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "intro",
   "title": "Introduction",
-  "description": "The IS Blocks Key Management System (KMS) is a freeware application for managing and performing lifecycle operations on cryptographic material.",
+  "description": "The IS Blocks Key Management System (KMS) is a freeware application for managing and performing lifecycle operations on cryptographic material in addition to providing several out of the box end user use cases for cryptographic operations.",
   "source": "@site/docs/00_intro.md",
   "sourceDirName": ".",
   "slug": "/intro",

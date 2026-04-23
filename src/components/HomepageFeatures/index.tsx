@@ -1,3 +1,4 @@
+import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -5,13 +6,13 @@ import styles from './styles.module.css';
 type FeatureItem = {
   title: string;
   imgSrc: string;
-  description: JSX.Element;
+  description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    imgSrc: require('@site/static/img/isauri.png').default,
+    imgSrc: require('@site/static/img/isauri_easy_to_use.png').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -20,8 +21,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imgSrc: require('@site/static/img/isauri.png').default,
+    title: 'Flexible',
+    imgSrc: require('@site/static/img/isauri_flexible.png').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -30,8 +31,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    imgSrc: require('@site/static/img/isauri.png').default,
+    title: 'Secure',
+    imgSrc: require('@site/static/img/isauri_secure.png').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -55,7 +56,7 @@ function Feature({title, imgSrc, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">

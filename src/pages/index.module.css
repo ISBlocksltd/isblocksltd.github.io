@@ -3,13 +3,11 @@
  * and scoped locally.
  */
 
- .heroBanner {
+.heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url(/img/isblocks.jpg);
-  background-color:#6cad6a;
 }
 
 @media screen and (max-width: 996px) {
