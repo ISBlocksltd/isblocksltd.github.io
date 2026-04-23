@@ -46,17 +46,28 @@ git clone https://github.com/ISBlocksltd/isblocks-kms.git
 
 ## Set the hostname or FQDN of the IS Blocks KMS Service
 ```bash
-git clone https://github.com/ISBlocksltd/isblocks-kms.git
+export DOMAIN=<your domain name>
 ```
 
-## Create the private key and certificate files for the service
+## Create the TLS certificates
+### Option 1: If using self signed certficates
+
+#### Run the script to generate a self signed certificate pair
 ```bash
-git clone https://github.com/ISBlocksltd/isblocks-kms.git
+cd isblocks-kms
+./ca.sh <DOMAIN> <CA NAME>
+```
+
+### Option 2: If using ACME to obtain a domain certifiate
+
+## Create the TLS secret for the application 
+```bash
+kubectl create secret tls keycloak-tls   -n keycloak   --cert=/opt/isblocks/cert/tls.crt   --key=/opt/isblocks/cert/tls.key
 ```
 
 ## Create the namespace
 ```bash
-git clone https://github.com/ISBlocksltd/isblocks-kms.git
+kubectl create namespace keycloak
 ```
 
 ## Create the PVC
@@ -69,7 +80,14 @@ git clone https://github.com/ISBlocksltd/isblocks-kms.git
 cd isblocks-kms/
 kubectl -f kubernetes/. -n keycloak
 ```
-
+## Check that the service is running
+```bash
+kubectl get svc -n keycloak
+```
+## Examine the pod
+```bash
+kubectl describe pod -l app=keycloak -n keycloak
+```
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 

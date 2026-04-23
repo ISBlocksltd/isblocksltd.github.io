@@ -71,36 +71,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "architecture/congratulations",
-              "path": "/docs/architecture/congratulations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/create-a-blog-post",
-              "path": "/docs/architecture/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/create-a-document",
-              "path": "/docs/architecture/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/create-a-page",
-              "path": "/docs/architecture/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/deploy-your-site",
-              "path": "/docs/architecture/deploy-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/markdown-features",
-              "path": "/docs/architecture/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "installation/baremetal",
               "path": "/docs/installation/baremetal",
               "sidebar": "tutorialSidebar"
@@ -168,6 +138,36 @@
             {
               "id": "intro",
               "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/congratulations",
+              "path": "/docs/introduction/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/create-a-blog-post",
+              "path": "/docs/introduction/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/create-a-document",
+              "path": "/docs/introduction/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/create-a-page",
+              "path": "/docs/introduction/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/deploy-your-site",
+              "path": "/docs/introduction/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/markdown-features",
+              "path": "/docs/introduction/markdown-features",
               "sidebar": "tutorialSidebar"
             },
             {

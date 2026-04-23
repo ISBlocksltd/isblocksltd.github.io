@@ -1,12 +1,14 @@
 yangshun:
   name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
+  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
+  url: https://linkedin.com/in/yangshun
   image_url: https://github.com/yangshun.png
   page: true
   socials:
     x: yangshunz
+    linkedin: yangshun
     github: yangshun
+    newsletter: https://www.greatfrontend.com
 
 slorber:
   name: Sébastien Lorber
@@ -20,18 +22,4 @@ slorber:
     x: sebastienlorber
     linkedin: sebastienlorber
     github: slorber
-    newsletter: https://thisweekinreact.com
-
-rdacosta:
-  name: Raoul da Costa
-  title: Owner of IS Blocks Ltd
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-rdc-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: raouldcosta
-    github: isbrdc
     newsletter: https://thisweekinreact.com

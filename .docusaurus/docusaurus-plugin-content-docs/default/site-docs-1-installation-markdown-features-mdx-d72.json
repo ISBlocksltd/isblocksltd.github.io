@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bare Metal",
-    "permalink": "/docs/installation/baremetal"
+    "title": "Hardware",
+    "permalink": "/docs/installation/hardware"
   },
   "next": {
     "title": "Deploy your site",
