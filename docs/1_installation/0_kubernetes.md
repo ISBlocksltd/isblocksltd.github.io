@@ -59,6 +59,16 @@ cd isblocks-kms
 ```
 
 ### Option 2: If using ACME to obtain a domain certifiate
+This section assumes that you already have a domain name associated with this server. You can then use the ACME certbot to request a public certificate for this installation using the certbot client. 
+
+Replace the following values in the command below
+
+
+```bash
+sudo certbot certonly --standalone -d example.com \
+--agree-tos --non-interactive --email you@example.com \
+--deploy-hook "cp /etc/letsencrypt/live/example.com/privkey.pem /opt/isblocks/cert/tls.key && cp /etc/letsencrypt/live/example.com/fullchain.pem /opt/isblocks/cert/tls.crt && chmod 600 /opt/isblocks/cert/tls.key && chmod 644 /opt/isblocks/cert/tls.crt"
+```
 
 ## Create the TLS secret for the application 
 ```bash

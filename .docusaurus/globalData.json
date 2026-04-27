@@ -36,8 +36,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "administration/keymanagement",
+              "path": "/docs/administration/keymanagement",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "administration/markdown-features",
               "path": "/docs/administration/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "administration/ringmanagement",
+              "path": "/docs/administration/ringmanagement",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -138,6 +148,11 @@
             {
               "id": "intro",
               "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/concepts",
+              "path": "/docs/introduction/concepts",
               "sidebar": "tutorialSidebar"
             },
             {

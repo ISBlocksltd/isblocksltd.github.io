@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'fca'),
+    component: ComponentCreator('/docs', 'ac9'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'a5b'),
+        component: ComponentCreator('/docs', 'de0'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '9ad'),
+            component: ComponentCreator('/docs', '460'),
             routes: [
               {
                 path: '/docs/administration/congratulations',
@@ -155,8 +155,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/administration/keymanagement',
+                component: ComponentCreator('/docs/administration/keymanagement', '853'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/administration/markdown-features',
                 component: ComponentCreator('/docs/administration/markdown-features', '450'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/administration/ringmanagement',
+                component: ComponentCreator('/docs/administration/ringmanagement', '6fc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -319,6 +331,12 @@ export default [
               {
                 path: '/docs/intro',
                 component: ComponentCreator('/docs/intro', '4ac'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/introduction/concepts',
+                component: ComponentCreator('/docs/introduction/concepts', 'ac9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Create a Blog Post",
-    "permalink": "/docs/administration/create-a-blog-post"
+    "title": "Create a Page",
+    "permalink": "/docs/administration/create-a-page"
   },
   "next": {
     "title": "Deploy your site",
