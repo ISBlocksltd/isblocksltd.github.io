@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisblocksltd_github_io_2=self.webpackChunkisblocksltd_github_io_2||[]).push([["3220"],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
