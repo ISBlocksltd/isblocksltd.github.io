@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Bare Metal & Ubuntu Linux Installation
+# Operating System Installation
 
 This section provides a complete, step-by-step guide for installing and configuring the **IS Blocks KMS** system on an **Ubuntu 24.04 / 26.04 LTS** server (bare metal physical machine or virtual machine).
 
