@@ -21,16 +21,11 @@ A key is a basic unit of the KMS system. A key is a cryptograpic piece of inform
 
 A ring is a logical grouping of keys. A ring is protected by specific authentication information and stores keys in the same logical area. A ring could be soft, PKCS#11, Azure, Aliyu, AWS or Google. A description of the various ring types is provided in the table below: 
 
-| Format            | Description | 
-| :---------------- | :------: | 
-| Soft            | Software based keys and certificates |
-| PKCS#11             | PKCS#11 based keys and certificates|
-| Azure            | Keys stored in Azure Key Vault|
-| Google            | Keys stored in Google Key Management System|
-| AWS            | Keys stored in AWS |
-| Aliyun            | Keys stored in Alibaba Cloud Key Management System|
+## Keys on Rings
 
-## Certificate
+
+
+## Certfificate
 
 A certificate is a public key cryptograpicaly bound to a set of meta data. The process of binding is often referred to a digitally signing. 
 
@@ -38,9 +33,9 @@ The following certificate formats are supported by the IS Blocks KMS system.
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | Standard attributed certificates based on the X.509 standards |
-| SSH             | Certification Authority for handling SSH certificates and SSH root of trusts |
-| CVCA            | Card Verifiable Certification Authority |
+| X.509             | Description |
+| SSH             | Description |
+| CVCA            | Description |
 
 ## Constraint
 
@@ -52,10 +47,9 @@ The following constraint types are supported by the IS Blocks KMS system:
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | Constraint for setting up an X.509 CA hierarchy |
-| SSH               | Constraint for setting up an SSH key hierarchy |
-| CVCA              | Constraint for setting up a Card Verifiable Certification Authority (CVCA) hierarchy |
-| TSA               | A constraint for setting up a Time Stamping Authority (TSA) |
+| X.509             | Description |
+| SSH             | Description |
+| CVCA            | Description |
 
 ## Certification Authority
 
@@ -66,9 +60,9 @@ Depending on the issuing entity, format, the location of the private key, the fo
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | An authority for issuing X.509 certificates. This authority may be a root CA or an issuing CA |
-| SSH             | An authority for issuing SSH certificates.  |
-| CVCA            | An authority for creating a CVCA certificate hierarchy |
+| X.509             | Description |
+| SSH             | Description |
+| CVCA            | Description |
 
 Depending on the location of the private key, the following types of CAs can be created:
 
@@ -77,7 +71,6 @@ Depending on the location of the private key, the following types of CAs can be 
 | Self            | Self Signed CA |
 | Imported            | Imported CA certificate, no private key is present |
 | External            | CA with private key signed by an external CA |
-| Subordinate CA (Sub CA)            | CA with the issuing CA in the same infrastructure |
 
 ## Certification Authority Object Model
 
@@ -97,6 +90,7 @@ For example, in order to create a self signed certificate, one would:
 - First create the key
 - Create a constraint with meta data saying that it is a self signed certificate, the key to be used as well as the other meta data used to create a certificate like the Subject DN, key attributes and so on
 
-Once the constraint is created, a CA object can then be created. A CA object is identified by an identifier and associated with a constraint. Using the meta data specfied in the constraint, the system can create a CA object. 
+Once the constraint is created, a CA object can then be created. A CA object is identified by an identifier and associated with a constraint. Using the meta data specfied in the constraint, the system can create a CA object:
 
-For example if the system specifies that the certificate will be self signed of format X.509 the key with identifier shall be used to create a CSR based on the meta data in the constrait, sign this CSR with it's own key and build the certificate. 
+- **Self-Signed Root CA (`caId: "self"`)**: The system creates a CSR based on the constraint metadata, signs it using its own private key, and activates the CA immediately (`status: "active"`).
+- **Subordinate CA with External CA (`caId: "external"`)**: The system creates the CA object in `status: "await"` containing the generated CSR. The operator downloads this CSR, submits it to the external root/parent CA to be signed, and imports the signed certificate into the CA to activate it. 
