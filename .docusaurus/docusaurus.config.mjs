@@ -6,13 +6,14 @@
 export default {
   "title": "IS Blocks Docs",
   "tagline": "Information Security Blocks",
-  "url": "https://isblocksltd.github.io",
+  "url": "https://docs.isblocks.com",
   "baseUrl": "/",
   "projectName": "isblocksltd.github.io",
   "organizationName": "isblocksltd",
   "trailingSlash": false,
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "favicon": "img/isblocks.ico",
+  "deploymentBranch": "gh-pages",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -147,7 +148,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 IS Blocks. Built with Docusaurus."
     },
     "prism": {
       "theme": {

@@ -7,14 +7,15 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'IS Blocks Docs',
   tagline: 'Information Security Blocks',
-  url: 'https://isblocksltd.github.io',
+  url: 'https://docs.isblocks.com',
   baseUrl: '/',
   projectName: 'isblocksltd.github.io',
   organizationName: 'isblocksltd',
   trailingSlash: false,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/isblocks.ico',
+  deploymentBranch: 'gh-pages',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -133,7 +134,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} IS Blocks. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

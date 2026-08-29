@@ -1,7 +1,7 @@
 {
   "id": "installation/baremetal",
-  "title": "Bare Metal",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "title": "Bare Metal & Ubuntu Linux Installation",
+  "description": "This section provides a complete, step-by-step guide for installing and configuring the IS Blocks KMS system on an Ubuntu 24.04 / 26.04 LTS server (bare metal physical machine or virtual machine).",
   "source": "@site/docs/1_installation/2_baremetal.md",
   "sourceDirName": "1_installation",
   "slug": "/installation/baremetal",

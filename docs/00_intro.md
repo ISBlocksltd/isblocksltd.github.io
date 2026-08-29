@@ -17,7 +17,8 @@ Some of the shortcomings that we have observed are:
 - Closed source products 
 - Products are unable to keep up with security standards
 - Built on old  technology
-- High cost
+- High cost for development
+- Steep learning curve  
 
 
 # Is the product open source
@@ -27,6 +28,7 @@ The answer to this partially. The product makes use of several open source libra
 Our open source modules include: 
 - Java PKCS#11 Wrapper - JNI wrapper for PKCS#11 3.2 that has been tested against several devices and supports the latest post quantum algorithms
 - Java CSCA Master List Processor - Module for processing certificats from CSCA Master Lists these are extracted from the master list and can be further analysed, placed in a database or used to perform certificate validation
+- Java CVCA Library - Library for creating CVCA certificates
 - Java COSE Library - Library for signing and encrypting CBOR objects using the COSE standard 
 - Java MRTD Reader API - Library for performing basic access control (BAC), PACE and accessing data on a passport chip via a mobile phone NFC device. This can be use to build your own application that reads electronic passports and identity cards
 
@@ -59,53 +61,18 @@ The product is able to manage keys in the following cloud key stores
 
 ### Certificate Support
 
-The product delivers public key infrastructure by allowing the attachment of meta data to public keys. The product delivers life cycle managmenet of the following certificae formats: 
+The product delivers public key infrastructure by allowing the attachment of meta data to public keys. The product delivers life cycle managmenet of the following certificate formats: 
 - SSH Certificates
 - X.509 Certificates 
 - CVCA Certificates
 
-## Key Manageent Use Cases Supported 
+## Key Management Use Cases Supported 
 
-As a platform the intention is that a user can deploy the product in one of the following deployment modes.
+|Use Case  | Description           |
+|---------|-----------------------|
+| Key Life Cycle Management    | Generation, Archival of keys  |
+| X.509 Certificate Management | Actions for managing X.509 Certificates |
+| OCSP Signing | Creation of OCSP Responses |
+| SSH Certificate Management | Actions for managing SSH Certificates |
+| X.509 Certificate Management | Actions for managing X.509 Certificates |
 
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

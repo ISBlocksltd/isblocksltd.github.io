@@ -11,28 +11,28 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "administration/congratulations",
-              "path": "/docs/administration/congratulations",
+              "id": "administration/backup_restore",
+              "path": "/docs/administration/backup_restore",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "administration/create-a-blog-post",
-              "path": "/docs/administration/create-a-blog-post",
+              "id": "administration/camanagement",
+              "path": "/docs/administration/camanagement",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "administration/create-a-document",
-              "path": "/docs/administration/create-a-document",
+              "id": "administration/certificatemanagement",
+              "path": "/docs/administration/certificatemanagement",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "administration/create-a-page",
-              "path": "/docs/administration/create-a-page",
+              "id": "administration/constraintmanagement",
+              "path": "/docs/administration/constraintmanagement",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "administration/deploy-your-site",
-              "path": "/docs/administration/deploy-your-site",
+              "id": "administration/dashboard",
+              "path": "/docs/administration/dashboard",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -41,8 +41,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "administration/markdown-features",
-              "path": "/docs/administration/markdown-features",
+              "id": "administration/logging",
+              "path": "/docs/administration/logging",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -53,11 +53,6 @@
             {
               "id": "advanced_topics/ca-va-publishing",
               "path": "/docs/advanced_topics/ca-va-publishing",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "advanced_topics/congratulations",
-              "path": "/docs/advanced_topics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -76,18 +71,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "advanced_topics/markdown-features",
-              "path": "/docs/advanced_topics/markdown-features",
+              "id": "installation/advanced",
+              "path": "/docs/installation/advanced",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "installation/baremetal",
               "path": "/docs/installation/baremetal",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "installation/congratulations",
-              "path": "/docs/installation/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -111,13 +101,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "installation/markdown-features",
-              "path": "/docs/installation/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "integration/congratulations",
-              "path": "/docs/integration/congratulations",
+              "id": "integration/codesigningclient",
+              "path": "/docs/integration/codesigningclient",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -126,23 +111,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "integration/create-a-document",
-              "path": "/docs/integration/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "integration/create-a-page",
               "path": "/docs/integration/create-a-page",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "integration/deploy-your-site",
-              "path": "/docs/integration/deploy-your-site",
+              "id": "integration/hsm",
+              "path": "/docs/integration/hsm",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "integration/markdown-features",
-              "path": "/docs/integration/markdown-features",
+              "id": "integration/sshca",
+              "path": "/docs/integration/sshca",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -151,83 +131,28 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "introduction/architecture",
+              "path": "/docs/introduction/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "introduction/concepts",
               "path": "/docs/introduction/concepts",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "introduction/congratulations",
-              "path": "/docs/introduction/congratulations",
+              "id": "introduction/hsmsupport",
+              "path": "/docs/introduction/hsmsupport",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "introduction/create-a-blog-post",
-              "path": "/docs/introduction/create-a-blog-post",
+              "id": "introduction/standards",
+              "path": "/docs/introduction/standards",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "introduction/create-a-document",
-              "path": "/docs/introduction/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "introduction/create-a-page",
-              "path": "/docs/introduction/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "introduction/deploy-your-site",
-              "path": "/docs/introduction/deploy-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "introduction/markdown-features",
-              "path": "/docs/introduction/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/architecture",
-              "path": "/docs/category/architecture",
+              "id": "/category/background",
+              "path": "/docs/category/background",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -248,16 +173,6 @@
             {
               "id": "/category/tutorial---basics",
               "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---basics-1",
-              "path": "/docs/category/tutorial---basics-1",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],

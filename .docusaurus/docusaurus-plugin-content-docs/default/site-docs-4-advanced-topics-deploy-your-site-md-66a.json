@@ -17,11 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Markdown Features",
-    "permalink": "/docs/advanced_topics/markdown-features"
-  },
-  "next": {
-    "title": "Congratulations!",
-    "permalink": "/docs/advanced_topics/congratulations"
+    "title": "Create a Blog Post",
+    "permalink": "/docs/advanced_topics/create-a-blog-post"
   }
 }

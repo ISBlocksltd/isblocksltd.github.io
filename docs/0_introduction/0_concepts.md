@@ -21,11 +21,16 @@ A key is a basic unit of the KMS system. A key is a cryptograpic piece of inform
 
 A ring is a logical grouping of keys. A ring is protected by specific authentication information and stores keys in the same logical area. A ring could be soft, PKCS#11, Azure, Aliyu, AWS or Google. A description of the various ring types is provided in the table below: 
 
-## Keys on Rings
+| Format            | Description | 
+| :---------------- | :------: | 
+| Soft            | Software based keys and certificates |
+| PKCS#11             | PKCS#11 based keys and certificates|
+| Azure            | Keys stored in Azure Key Vault|
+| Google            | Keys stored in Google Key Management System|
+| AWS            | Keys stored in AWS |
+| Aliyun            | Keys stored in Alibaba Cloud Key Management System|
 
-
-
-## Certfificate
+## Certificate
 
 A certificate is a public key cryptograpicaly bound to a set of meta data. The process of binding is often referred to a digitally signing. 
 
@@ -33,9 +38,9 @@ The following certificate formats are supported by the IS Blocks KMS system.
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | Description |
-| SSH             | Description |
-| CVCA            | Description |
+| X.509             | Standard attributed certificates based on the X.509 standards |
+| SSH             | Certification Authority for handling SSH certificates and SSH root of trusts |
+| CVCA            | Card Verifiable Certification Authority |
 
 ## Constraint
 
@@ -47,9 +52,10 @@ The following constraint types are supported by the IS Blocks KMS system:
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | Description |
-| SSH             | Description |
-| CVCA            | Description |
+| X.509             | Constraint for setting up an X.509 CA hierarchy |
+| SSH               | Constraint for setting up an SSH key hierarchy |
+| CVCA              | Constraint for setting up a Card Verifiable Certification Authority (CVCA) hierarchy |
+| TSA               | A constraint for setting up a Time Stamping Authority (TSA) |
 
 ## Certification Authority
 
@@ -60,9 +66,9 @@ Depending on the issuing entity, format, the location of the private key, the fo
 
 | Format            | Description | 
 | :---------------- | :------: | 
-| X.509             | Description |
-| SSH             | Description |
-| CVCA            | Description |
+| X.509             | An authority for issuing X.509 certificates. This authority may be a root CA or an issuing CA |
+| SSH             | An authority for issuing SSH certificates.  |
+| CVCA            | An authority for creating a CVCA certificate hierarchy |
 
 Depending on the location of the private key, the following types of CAs can be created:
 
@@ -71,6 +77,7 @@ Depending on the location of the private key, the following types of CAs can be 
 | Self            | Self Signed CA |
 | Imported            | Imported CA certificate, no private key is present |
 | External            | CA with private key signed by an external CA |
+| Subordinate CA (Sub CA)            | CA with the issuing CA in the same infrastructure |
 
 ## Certification Authority Object Model
 

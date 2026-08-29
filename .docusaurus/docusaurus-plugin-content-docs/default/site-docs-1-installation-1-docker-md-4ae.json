@@ -21,7 +21,7 @@
     "permalink": "/docs/installation/kubernetes"
   },
   "next": {
-    "title": "Bare Metal",
+    "title": "Bare Metal & Ubuntu Linux Installation",
     "permalink": "/docs/installation/baremetal"
   }
 }

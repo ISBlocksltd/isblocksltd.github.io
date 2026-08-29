@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Markdown Features",
-    "permalink": "/docs/installation/markdown-features"
+    "title": "Advanced",
+    "permalink": "/docs/installation/advanced"
   },
   "next": {
-    "title": "Congratulations!",
-    "permalink": "/docs/installation/congratulations"
+    "title": "Administration",
+    "permalink": "/docs/category/administration"
   }
 }

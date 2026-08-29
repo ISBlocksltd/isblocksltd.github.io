@@ -4,22 +4,18 @@ sidebar_position: 4
 
 # Hardware
 
-This sections describes the installation of the IS Blocks KMS system on a Kubernetes cluster. 
+This section describes the installation of the IS Blocks KMS using the custom ISO file
 
-This section assumes that you are familiar with the basics of Kuberntes and are able to perform basic troubleshooting actions on the cluster. 
+This type of installation is perfect for offline root systems or systems that do not have any Internet connectivity. 
 
-Before you install on a Kubernetes cluster you need to ensure the following: 
-
-- You have an internal of publicly recognised hostname or FQDN assigned to the services
-- You have installed Kubernetes on your server or local machine
-- Your host machine is able to communicate to your cluster over port 443
-
-## Verify that you cluster is running
+## Download the latest ISO Image 
 
 Before you start installing the service, verify that the cluster is operational. Some simple commands are listed for this purpose but you are advised to consult the Kubernetes documentation on advice on how t osetup the cluster and troubleshoot. 
 
 
-### Verify Kubernetes Connectivity  
+## Install the ISO Image
+
+
 ```bash
 kubectl cluster-info
 ```

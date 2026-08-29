@@ -1,7 +1,7 @@
 {
   "id": "installation/hardware",
   "title": "Hardware",
-  "description": "This sections describes the installation of the IS Blocks KMS system on a Kubernetes cluster.",
+  "description": "This section describes the installation of the IS Blocks KMS using the custom ISO file",
   "source": "@site/docs/1_installation/3_hardware.md",
   "sourceDirName": "1_installation",
   "slug": "/installation/hardware",
@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bare Metal",
+    "title": "Bare Metal & Ubuntu Linux Installation",
     "permalink": "/docs/installation/baremetal"
   },
   "next": {
-    "title": "Markdown Features",
-    "permalink": "/docs/installation/markdown-features"
+    "title": "Advanced",
+    "permalink": "/docs/installation/advanced"
   }
 }
