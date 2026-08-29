@@ -1,7 +1,7 @@
 {
   "id": "installation/hardware",
-  "title": "Hardware",
-  "description": "This section describes the installation of the IS Blocks KMS using the custom ISO file",
+  "title": "ISO & Appliance Installation",
+  "description": "This section provides comprehensive instructions for installing the IS Blocks KMS turnkey appliance using the custom ISO image across physical bare-metal hardware and enterprise hypervisors / virtualization platforms:",
   "source": "@site/docs/1_installation/3_hardware.md",
   "sourceDirName": "1_installation",
   "slug": "/installation/hardware",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bare Metal & Ubuntu Linux Installation",
+    "title": "Operating System Installation",
     "permalink": "/docs/installation/baremetal"
   },
   "next": {

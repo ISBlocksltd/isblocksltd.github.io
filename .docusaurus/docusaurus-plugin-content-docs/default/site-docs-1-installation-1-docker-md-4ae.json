@@ -1,7 +1,7 @@
 {
   "id": "installation/docker",
   "title": "Docker",
-  "description": "Documents are groups of pages connected through:",
+  "description": "This section describes the installation and deployment of the IS Blocks KMS system using Docker and Docker Compose.",
   "source": "@site/docs/1_installation/1_docker.md",
   "sourceDirName": "1_installation",
   "slug": "/installation/docker",
@@ -21,7 +21,7 @@
     "permalink": "/docs/installation/kubernetes"
   },
   "next": {
-    "title": "Bare Metal & Ubuntu Linux Installation",
+    "title": "Operating System Installation",
     "permalink": "/docs/installation/baremetal"
   }
 }
